@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Plane.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Rocket.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+
+[node name="Main" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.588235 )
+margin_right = 2421.93
+margin_bottom = 1780.21
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rocket" parent="." instance=ExtResource( 2 )]
+position = Vector2( 372.658, 554.702 )
+
+[node name="Plane" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1488.25, 819.039 )
